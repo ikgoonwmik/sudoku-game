@@ -1,0 +1,103 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.difficulty {
+  display: flex;
+  gap: 0;
+  border: 1px solid #c8cdd6;
+}
+
+.diffButton {
+  flex: 1;
+  padding: 10px 0;
+  background: #ffffff;
+  border: none;
+  border-right: 1px solid #c8cdd6;
+  font-size: 15px;
+  color: #2a3142;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.08s linear;
+}
+
+.diffButton:last-child {
+  border-right: none;
+}
+
+.diffButton:hover {
+  background: #eef3fa;
+}
+
+.diffActive {
+  background: #2a3142;
+  color: #ffffff;
+}
+
+.diffActive:hover {
+  background: #2a3142;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f3f4f7;
+}
+
+.statusItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.statusLabel {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.statusValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a3142;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actionButton {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 15px;
+  background: #ffffff;
+  border: 1px solid #c8cdd6;
+  color: #2a3142;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.08s linear;
+}
+
+.actionButton:hover:not(:disabled) {
+  background: #eef3fa;
+}
+
+.actionButton:disabled {
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: #2a3142;
+  color: #ffffff;
+  border-color: #2a3142;
+}
+
+.primary:hover:not(:disabled) {
+  background: #1f2533;
+}

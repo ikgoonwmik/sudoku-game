@@ -1,0 +1,49 @@
+.pad {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.numButton {
+  padding: 14px 0;
+  font-size: 20px;
+  font-weight: 500;
+  background: #ffffff;
+  border: 1px solid #c8cdd6;
+  color: #2a3142;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.08s linear;
+}
+
+.numButton:hover:not(:disabled) {
+  background: #eef3fa;
+}
+
+.numButton:disabled {
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+
+.eraseButton {
+  grid-column: span 2;
+  padding: 14px 0;
+  font-size: 16px;
+  background: #f3f4f7;
+  border: 1px solid #c8cdd6;
+  color: #2a3142;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.08s linear;
+}
+
+.eraseButton:hover:not(:disabled) {
+  background: #e6e8ee;
+}
+
+.eraseButton:disabled {
+  color: #c0c4cc;
+  cursor: not-allowed;
+}

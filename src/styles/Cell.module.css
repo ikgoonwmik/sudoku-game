@@ -1,0 +1,58 @@
+.cell {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #d0d4dc;
+  background: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  color: #2a5fb4;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.08s linear;
+}
+
+.cell:hover {
+  background: #eef3fa;
+}
+
+.borderRight {
+  border-right: 2px solid #2a3142;
+}
+
+.borderBottom {
+  border-bottom: 2px solid #2a3142;
+}
+
+.initial {
+  color: #2a3142;
+  font-weight: 600;
+}
+
+.selected {
+  background: #bcd5f3;
+}
+
+.selected:hover {
+  background: #bcd5f3;
+}
+
+.highlighted {
+  background: #e3ecf7;
+}
+
+.sameNumber {
+  background: #c8dcf2;
+}
+
+.mistake {
+  color: #c0392b;
+  background: #fde2e0;
+}
+
+.mistake:hover {
+  background: #fde2e0;
+}
