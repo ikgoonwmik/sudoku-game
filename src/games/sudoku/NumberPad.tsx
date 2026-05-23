@@ -1,4 +1,4 @@
-import styles from "../styles/NumberPad.module.css";
+import styles from "../../styles/NumberPad.module.css";
 
 interface NumberPadProps {
   onInput: (num: number) => void;

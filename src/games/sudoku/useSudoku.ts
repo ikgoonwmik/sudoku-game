@@ -5,7 +5,7 @@ import type {
   Difficulty,
   GameState,
   GameStatus,
-} from "../types/sudoku";
+} from "./types";
 import { findEmptyCells, generatePuzzle, isBoardComplete } from "./sudoku";
 
 const MAX_LIVES = 3;
@@ -51,6 +51,9 @@ export const useSudoku = (initialDifficulty: Difficulty = "easy") => {
 
       if (prev.initialBoard[row][col] !== null) return prev;
 
+      const previousValue = prev.board[row][col];
+      if (previousValue === num) return prev;
+
       const key = `${row}-${col}`;
       const newBoard = cloneBoard(prev.board);
       newBoard[row][col] = num;
@@ -62,9 +65,7 @@ export const useSudoku = (initialDifficulty: Difficulty = "easy") => {
       if (isCorrect) {
         newMistakes.delete(key);
       } else {
-        if (!newMistakes.has(key)) {
-          newLives = prev.lives - 1;
-        }
+        newLives = prev.lives - 1;
         newMistakes.add(key);
       }
 

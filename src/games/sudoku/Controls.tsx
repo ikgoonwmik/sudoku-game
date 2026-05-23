@@ -1,5 +1,5 @@
-import type { Difficulty } from "../types/sudoku";
-import styles from "../styles/Controls.module.css";
+import type { Difficulty } from "./types";
+import styles from "../../styles/Controls.module.css";
 
 interface ControlsProps {
   difficulty: Difficulty;

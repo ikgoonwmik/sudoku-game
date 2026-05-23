@@ -10,36 +10,21 @@
 
 .container {
   width: 100%;
-  max-width: 480px;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
   align-items: center;
-  gap: 20px;
 }
 
 .header {
   width: 100%;
-  text-align: left;
-  margin-bottom: 4px;
-}
-
-.title {
-  margin: 0;
-  font-size: 32px;
-  letter-spacing: 4px;
-  font-weight: 700;
-  color: #2a3142;
-}
-
-.subtitle {
-  margin: 4px 0 0 0;
-  font-size: 14px;
-  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .backLink {
-  display: inline-block;
-  margin-bottom: 12px;
   font-size: 13px;
   color: #6b7280;
   text-decoration: none;
@@ -48,6 +33,85 @@
 
 .backLink:hover {
   color: #2a3142;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #2a3142;
+}
+
+.scores {
+  display: flex;
+  gap: 8px;
+}
+
+.scoreBox {
+  background: #2a3142;
+  color: #ffffff;
+  padding: 8px 16px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.scoreLabel {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #c8cdd6;
+}
+
+.scoreValue {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.newButton {
+  padding: 10px 20px;
+  background: #2a3142;
+  color: #ffffff;
+  border: 1px solid #2a3142;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.08s linear;
+}
+
+.newButton:hover {
+  background: #1f2533;
+}
+
+.boardWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hint {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
 }
 
 .overlay {

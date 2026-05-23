@@ -1,6 +1,6 @@
-import type { Board as BoardType, CellPosition } from "../types/sudoku";
+import type { Board as BoardType, CellPosition } from "./types";
 import Cell from "./Cell";
-import styles from "../styles/Board.module.css";
+import styles from "../../styles/Board.module.css";
 
 interface BoardProps {
   board: BoardType;

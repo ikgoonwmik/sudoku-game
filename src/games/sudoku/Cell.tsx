@@ -1,5 +1,5 @@
-import type { CellValue } from "../types/sudoku";
-import styles from "../styles/Cell.module.css";
+import type { CellValue } from "./types";
+import styles from "../../styles/Cell.module.css";
 
 interface CellProps {
   value: CellValue;

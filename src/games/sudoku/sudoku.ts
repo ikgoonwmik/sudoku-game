@@ -1,4 +1,4 @@
-import type { Board, CellValue, Difficulty } from "../types/sudoku";
+import type { Board, CellValue, Difficulty } from "./types";
 
 const SIZE = 9;
 const BOX = 3;
